@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <h5 class="" id="alert-text"></h5>
+
+    <form action="" id="form">
+        <input type="text" id="bill" placeholder="Enter bill amount">
+        <input type="text" id="persons" placeholder="Number of People">
+        <select name="tip" id="tip">
+            <option value="">Select Tip Percentage</option>
+            <option value="5" class="">5% (Good)</option>
+            <option value="10" class="">10% (Great)</option>
+            <option value="15" class="">15% (Excellent)</option>
+            <option value="20" class="">20% (Amazing!)</option>
+        </select>
+        <button type="submit" id="submit">Calculate</button>
+    </form>
+
+    <section class="display-area">
+        <div class="display-row">
+            <span class="bill-amount">Bill Amount: </span>
+            <output id="out-bill">PHP 0.00</output>
+        </div>
+        <div class="display-row">
+            <span class="tip-amount">Tip Amount: </span>
+            <output id="out-tip">PHP 0.00</output>
+        </div>
+        <div class="display-row">
+            <span class="split-amount">Amount Per Person: </span>
+            <output id="out-split">PHP 0.00</output>
+        </div>
+        <br>
+        <div class="display-row">
+            <span class="split-amount">Total: </span>
+            <output id="out-total">PHP 0.00</output>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
